@@ -1,7 +1,6 @@
+# Abstract classes
+# Python beyonds the basics - Object oriented programming
 """
-Abstract classes
-Python beyonds the basics - Object oriented programming
-
 An Abstract class is a kind of model for other classes to
 be defined. It is not designed to construct instances, but
 can be subclasses by regular classes
