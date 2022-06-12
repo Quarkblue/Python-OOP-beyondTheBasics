@@ -1,5 +1,13 @@
 # Method Overloading - Extending and Providing
 # Python beyond the basics - object oriented programming
+"""
+When working in a child class we can choose to implement parent
+class methods in different ways
+    Inherit : simply use the parent class defined methods
+    Override/overload : provide childs own version of a method
+    Extend : do work in addition to that in parent's methods
+    provide : implement abstract method that parent requires
+"""
 
 import abc
 
