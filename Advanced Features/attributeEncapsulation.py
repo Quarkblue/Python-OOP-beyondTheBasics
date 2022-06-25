@@ -39,5 +39,14 @@ class GetSet(object):
     def var(self):
         print("Deleting the vat attribute")
         self.attrval = None
-        
-        
+
+
+"""
+@property should not encapsulate expensive operations, because
+attribute setting looks cheap.
+@property controls attributes that are epxected, but can't
+control attributs that are unexpected.
+__slots__ can define allowable attributes
+    -Saves memory by defining attributes ahead of time.
+    -Should not be used to limit attributes -un-Pythonic.
+"""
