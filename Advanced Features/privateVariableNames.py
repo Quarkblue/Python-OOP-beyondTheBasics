@@ -5,10 +5,13 @@ Variable Naming : "Public" and "Private"
 "Public" attribute or variables(intended to be used by the 
 importer of this module or user of this class):
 regular_lower_case.
+
 "Private" attributes or variables(internal use by the module
 or class): _single_leading_underscore.
+
 "Private" attribute that shouldn't be subclassed:
 __double_leading_underscore.
+
 "Magic" attributes: __double_underscores__
 (use them, don't create them)
 """
