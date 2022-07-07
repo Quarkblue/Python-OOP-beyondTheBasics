@@ -1,34 +1,29 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<conio.h>
+#include<stdbool.h>
+#include<string.h>
 
-struct Distance {
-   int feet;
-   float inch;
-} d1, d2, result;
+struct student
+{
+   int roll_no;
+   char fname[50];
+   char lname[50];
+}s1,s2,s3,s4,s5;
 
-int main() {
-   // take first distance input
-   printf("Enter 1st distance\n");
-   printf("Enter feet: ");
-   scanf("%d", &d1.feet);
-   printf("Enter inch: ");
-   scanf("%f", &d1.inch);
- 
-   // take second distance input
-   printf("\nEnter 2nd distance\n");
-   printf("Enter feet: ");
-   scanf("%d", &d2.feet);
-   printf("Enter inch: ");
-   scanf("%f", &d2.inch);
+void main(){
    
-   // adding distances
-   result.feet = d1.feet + d2.feet;
-   result.inch = d1.inch + d2.inch;
+   struct student ar[5] = {s1,s2,s3,s4,s5};
 
-   // convert inches to feet if greater than 12
-   while (result.inch >= 12.0) {
-      result.inch = result.inch - 12.0;
-      ++result.feet;
+   for(int i=0;i<5;i++){
+      printf("%d\n",i);
+      printf("roll num: ");
+      scanf("%d",&ar[i].roll_no);
+      printf("fname: ");
+      gets(ar[i].fname);
+      printf("lname");
+      gets(ar[i].lname);
    }
-   printf("\nSum of distances = %d\'-%.1f\"", result.feet, result.inch);
-   return 0;
+   
 }
+   
+   
