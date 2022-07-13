@@ -1,29 +1,16 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdbool.h>
-#include<string.h>
+#include <stdio.h>
 
-struct student
-{
-   int roll_no;
-   char fname[50];
-   char lname[50];
-}s1,s2,s3,s4,s5;
+int main(){
 
-void main(){
-   
-   struct student ar[5] = {s1,s2,s3,s4,s5};
+   int n;
+   scanf("%d", &n);
 
-   for(int i=0;i<5;i++){
-      printf("%d\n",i);
-      printf("roll num: ");
-      scanf("%d",&ar[i].roll_no);
-      printf("fname: ");
-      gets(ar[i].fname);
-      printf("lname");
-      gets(ar[i].lname);
+   int fact,i;
+   fact=1;
+
+   for(i=1;i<=n;i++){
+      fact=fact*i;
    }
-   
+   printf("%d",fact);
+
 }
-   
-   

@@ -1,8 +1,16 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdbool.h>
+#include <stdio.h>
 
-void main(){
-   
-   int a[10][10] = {{2,3,4},{4,4,6},{3,4,5}};
-   int trans[10][10];
+int main(){
+
+   int arr[10];
+
+   for(int i =0; i<10; i++){
+      scanf("%d",&arr[i]);
+   }
+
+   for(int i = 0; i<10;i++){
+      printf("%d\n",arr[i]);
+   }
+
+   return 0;
+}
