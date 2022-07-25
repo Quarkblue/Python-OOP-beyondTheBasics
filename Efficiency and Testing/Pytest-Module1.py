@@ -11,3 +11,26 @@ setup_class() method to do test prep.
 teardown_class() method to clean up after tests.
 """
 
+import sys
+
+def doubleit(x):
+    var = x * 2
+    return var
+
+if __name__ == "__main__":
+    input_val = sys.argv[1]
+    doubled_val = doubleit(input_val)
+    
+    print(f"The value of {input_val} is {doubled_val}")
+    
+    
+import myprogram
+
+def test_doubleit():
+    assert myprogram.doubleit(10) == 20
+    
+    
+
+
+
+
