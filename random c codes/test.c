@@ -1,18 +1,15 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include<math.h>
+typedef char x[10];
+
 
 int main(){
 
-   int n;
-
-   scanf("%d", &n);
-
-   int fact,i;
-   fact=1;
-
-   for(int i=1;i<=n;i++){
-      fact=fact*i;
+   if(-5){
+      printf("A");
    }
-   printf("%d",fact);
+   
 
    return 0;
 
